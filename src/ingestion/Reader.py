@@ -2,9 +2,15 @@ import csv
 import xml.etree.ElementTree as ET
 from typing import Generator, Any
 import ijson  # pip install ijson for streaming JSON
+from abc import ABC, abstractmethod
+
+class AbstractReader(ABC):
+    @abstractmethod
+    def read(self) -> Generator[Any, None, None]:
+        pass
 
 
-class Reader:
+class Reader(AbstractReader):
     def __init__(self, format: str, filename: str, encoding: str = 'utf-8', target_tag: str = 'item', json_path: str = 'item'):
         """
         :param format: 'csv', 'json', or 'xml'
