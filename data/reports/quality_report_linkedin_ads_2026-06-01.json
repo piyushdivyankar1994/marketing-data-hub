@@ -1,0 +1,47 @@
+{
+  "delivery_id": "linkedin_ads_2026-06-01",
+  "processed_at": "2026-09-12T13:00:26.792261",
+  "health_status": "HEALTHY",
+  "summary": {
+    "total_records_processed": 21,
+    "valid_records_count": 21,
+    "error_records_count": 0,
+    "error_rate_percentage": 0.0,
+    "duplicate_rows_count": 0,
+    "total_spend_usd": 1910.28
+  },
+  "checks_executed": [
+    {
+      "check_id": "FILE_COMPLETENESS",
+      "name": "File Completeness Check",
+      "scope": "FILE",
+      "status": "PASSED",
+      "message": "File contains 21 total records.",
+      "details": {
+        "total_rows": 21
+      }
+    },
+    {
+      "check_id": "ROW_VALIDITY",
+      "name": "Row Parsing & Schema Validation",
+      "scope": "ROW",
+      "status": "PASSED",
+      "message": "All rows passed validation with zero errors.",
+      "details": {
+        "error_count": 0,
+        "error_rate_pct": 0.0
+      }
+    },
+    {
+      "check_id": "DELIVERY_DUPLICATION",
+      "name": "Record Uniqueness Check",
+      "scope": "DELIVERY",
+      "status": "PASSED",
+      "message": "No duplicate records found across campaign metrics.",
+      "details": {
+        "duplicate_count": 0
+      }
+    }
+  ],
+  "sample_failures": []
+}

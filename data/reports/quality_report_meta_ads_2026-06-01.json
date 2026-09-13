@@ -1,0 +1,123 @@
+{
+  "delivery_id": "meta_ads_2026-06-01",
+  "processed_at": "2026-09-12T12:38:54.010641",
+  "health_status": "CRITICAL",
+  "summary": {
+    "total_records_processed": 21,
+    "valid_records_count": 0,
+    "error_records_count": 21,
+    "error_rate_percentage": 100.0,
+    "duplicate_rows_count": 0,
+    "total_spend_usd": 0.0
+  },
+  "checks_executed": [
+    {
+      "check_id": "FILE_COMPLETENESS",
+      "name": "File Completeness Check",
+      "scope": "FILE",
+      "status": "PASSED",
+      "message": "File contains 21 total records.",
+      "details": {
+        "total_rows": 21
+      }
+    },
+    {
+      "check_id": "ROW_VALIDITY",
+      "name": "Row Parsing & Schema Validation",
+      "scope": "ROW",
+      "status": "FAILED",
+      "message": "High failure rate detected! Exceeds threshold of 5.0%.",
+      "details": {
+        "error_count": 21,
+        "error_rate_pct": 100.0
+      }
+    },
+    {
+      "check_id": "DELIVERY_DUPLICATION",
+      "name": "Record Uniqueness Check",
+      "scope": "DELIVERY",
+      "status": "PASSED",
+      "message": "No duplicate records found across campaign metrics.",
+      "details": {
+        "duplicate_count": 0
+      }
+    }
+  ],
+  "sample_failures": [
+    {
+      "line_number": 1,
+      "raw_record": {
+        "campaign": "ABM Tier 1",
+        "date_ts": 1780272000000,
+        "spend": {
+          "amount": "92.37",
+          "currency": "EUR"
+        },
+        "impressions": 41097,
+        "clicks": 1283
+      },
+      "error_type": "ValidationError",
+      "reason": "5 validation errors for CampaignMetric\ncampaign\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type\ndate_\n  Input should be a valid date [type=date_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/date_type\nspend_usd\n  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/float_type\nimpressions\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type\nclicks\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type"
+    },
+    {
+      "line_number": 2,
+      "raw_record": {
+        "campaign": "ABM Tier 1",
+        "date_ts": 1780358400000,
+        "spend": {
+          "amount": "152.88",
+          "currency": "EUR"
+        },
+        "impressions": 68551,
+        "clicks": 2338
+      },
+      "error_type": "ValidationError",
+      "reason": "5 validation errors for CampaignMetric\ncampaign\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type\ndate_\n  Input should be a valid date [type=date_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/date_type\nspend_usd\n  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/float_type\nimpressions\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type\nclicks\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type"
+    },
+    {
+      "line_number": 3,
+      "raw_record": {
+        "campaign": "ABM Tier 1",
+        "date_ts": 1780444800000,
+        "spend": {
+          "amount": "161.21",
+          "currency": "EUR"
+        },
+        "impressions": 46624,
+        "clicks": 1368
+      },
+      "error_type": "ValidationError",
+      "reason": "5 validation errors for CampaignMetric\ncampaign\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type\ndate_\n  Input should be a valid date [type=date_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/date_type\nspend_usd\n  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/float_type\nimpressions\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type\nclicks\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type"
+    },
+    {
+      "line_number": 4,
+      "raw_record": {
+        "campaign": "ABM Tier 1",
+        "date_ts": 1780531200000,
+        "spend": {
+          "amount": "79.22",
+          "currency": "EUR"
+        },
+        "impressions": 26418,
+        "clicks": 535
+      },
+      "error_type": "ValidationError",
+      "reason": "5 validation errors for CampaignMetric\ncampaign\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type\ndate_\n  Input should be a valid date [type=date_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/date_type\nspend_usd\n  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/float_type\nimpressions\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type\nclicks\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type"
+    },
+    {
+      "line_number": 5,
+      "raw_record": {
+        "campaign": "ABM Tier 1",
+        "date_ts": 1780617600000,
+        "spend": {
+          "amount": "147.56",
+          "currency": "EUR"
+        },
+        "impressions": 54399,
+        "clicks": 1293
+      },
+      "error_type": "ValidationError",
+      "reason": "5 validation errors for CampaignMetric\ncampaign\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type\ndate_\n  Input should be a valid date [type=date_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/date_type\nspend_usd\n  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/float_type\nimpressions\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type\nclicks\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_type"
+    }
+  ]
+}
